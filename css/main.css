@@ -347,6 +347,17 @@ div a:hover {
     color: #ff8505;
 }
 
+.main-menu>ul>li>ul a {
+    border-color: #b9bdc1;
+    border-right: 2px solid #b9bdc1;
+    border-bottom: 1px solid #b9bdc1;
+    border-left: none;
+}
+
+.main-menu>ul>li>ul>li:last-child a {
+    border-bottom: 2px solid #b9bdc1;
+}
+
 .style-table {
     display: table;
     border-collapse: collapse;
@@ -357,6 +368,7 @@ div a:hover {
 table {
     display: table;
     border-collapse: collapse;
+    border-color:  #c0c1c2;
     width: 100%;
 }
 
@@ -376,7 +388,16 @@ table:nth-child(5) {
 .tr,
 .td {
     padding: 15px;
-    border: 1px solid black;
+}
+
+tbody .tr,
+tbody .td {
+    border: 1px solid #c0c1c2;
+}
+
+.style-table>.tr,
+.style-table>.tr>.td {
+    border: 1px solid #c0c1c2;
 }
 
 table:last-child thead .tr:nth-child(2) {
@@ -415,6 +436,10 @@ table tbody .tr:nth-child(even) {
 .style-table>.tr:first-child {
     background-color: #2a3644;
     color: #fff;
+}
+
+.style-table>.tr:first-child .td {
+    border: 1px solid #3f4852;
 }
 
 table thead .tr {
